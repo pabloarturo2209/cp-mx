@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "load-data": "node ./scripts/load_data.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,12 @@
   "packageManager": "pnpm@10.29.2",
   "devDependencies": {
     "prettier": "^3.8.1"
-  }
+  },
+  "dependencies": {
+    "csv-parser": "^3.2.0",
+    "dotenv": "^17.3.1",
+    "pg": "^8.18.0",
+    "pg-copy-streams": "^7.0.0"
+  },
+  "type": "module"
 }
